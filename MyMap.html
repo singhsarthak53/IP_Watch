@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a5dc790079f43c9bb0d8243716b635f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0a5dc790079f43c9bb0d8243716b635f" ></div>
+        
+</body>
+<script>    
+    
+            var map_0a5dc790079f43c9bb0d8243716b635f = L.map(
+                "map_0a5dc790079f43c9bb0d8243716b635f",
+                {
+                    center: [26.8393, 80.9231],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9663c93668914eedb94f87069244901c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0a5dc790079f43c9bb0d8243716b635f);
+        
+    
+            var circle_marker_6b7b85a65ac44f8ca04c950d150a9fa1 = L.circleMarker(
+                [26.8393, 80.9231],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_0a5dc790079f43c9bb0d8243716b635f);
+        
+    
+        var popup_0e529ade8e4448dfa699df763465e944 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b8935af861444bc950239ecfeae9d14 = $(`<div id="html_4b8935af861444bc950239ecfeae9d14" style="width: 100.0%; height: 100.0%;">Lucknow</div>`)[0];
+            popup_0e529ade8e4448dfa699df763465e944.setContent(html_4b8935af861444bc950239ecfeae9d14);
+        
+
+        circle_marker_6b7b85a65ac44f8ca04c950d150a9fa1.bindPopup(popup_0e529ade8e4448dfa699df763465e944)
+        ;
+
+        
+    
+    
+            var marker_edd557ab315346bc8e271531457a1cf5 = L.marker(
+                [26.8393, 80.9231],
+                {}
+            ).addTo(map_0a5dc790079f43c9bb0d8243716b635f);
+        
+    
+        var popup_c53f19941dbf4bae8b4b74aa4ccdb871 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10a9e889f0ed4af89d41de28b5732373 = $(`<div id="html_10a9e889f0ed4af89d41de28b5732373" style="width: 100.0%; height: 100.0%;">Lucknow</div>`)[0];
+            popup_c53f19941dbf4bae8b4b74aa4ccdb871.setContent(html_10a9e889f0ed4af89d41de28b5732373);
+        
+
+        marker_edd557ab315346bc8e271531457a1cf5.bindPopup(popup_c53f19941dbf4bae8b4b74aa4ccdb871)
+        ;
+
+        
+    
+</script>
